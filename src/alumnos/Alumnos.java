@@ -13,7 +13,7 @@ public class Alumnos {
         this.nombre = nombre;
     }
     public void Saludar(){
-        System.out.println("No me caes bien!!");
+        System.out.println("No me caes !!");
     }
     public String getNia() {
         return nia;
