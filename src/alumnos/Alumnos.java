@@ -6,12 +6,15 @@ public class Alumnos {
     private String dni;
     private String nombre;
 
-    public Alumnos(String nia, String dni, String nombre) {
+    private int edad;
+    public Alumnos(String nia, String dni, String nombre, int edad) {
         this.nia = nia;
         this.dni = dni;
         this.nombre = nombre;
     }
-
+    public void Saludar(){
+        System.out.println("Hola, encantado");
+    }
     public String getNia() {
         return nia;
     }
@@ -34,5 +37,14 @@ public class Alumnos {
 
     public void setNombre(String nombre) {
         this.nombre = nombre;
+    }
+
+    @Override
+    public String toString() {
+        return "Alumnos{" +
+                "nia='" + nia + '\'' +
+                ", dni='" + dni + '\'' +
+                ", nombre='" + nombre + '\'' +
+                '}';
     }
 }
